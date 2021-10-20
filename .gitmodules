@@ -1,0 +1,3 @@
+[submodule "test-automation-task"]
+	path = test-automation-task
+	url = https://github.com/supermetrics-public/test-automation-task.git
