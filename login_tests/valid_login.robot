@@ -6,10 +6,18 @@ Documentation     A test suite with a single test for valid login.
 Resource          resource.robot
 
 *** Test Cases ***
-Valid Login
+Valid Login User
     Open Browser To Login Page
     Input Username    user
     Input Password    hellorworld
+    Submit Credentials
+    Welcome Page Should Be Open
+    [Teardown]    Close Browser
+
+Valid Login Admin
+    Open Browser To Login Page
+    Input Username    admin
+    Input Password    adminuser
     Submit Credentials
     Welcome Page Should Be Open
     [Teardown]    Close Browser
