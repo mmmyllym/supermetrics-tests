@@ -12,7 +12,7 @@ Valid Login User
     Input Password    hellorworld
     Submit Credentials
     Welcome Page Should Be Open
-    [Teardown]    Close Browser
+    [Teardown]    Reset and Close
 
 Valid Login Admin
     Open Browser To Login Page
@@ -20,4 +20,4 @@ Valid Login Admin
     Input Password    adminuser
     Submit Credentials
     Welcome Page Should Be Open
-    [Teardown]    Close Browser
+    [Teardown]    Reset and Close
