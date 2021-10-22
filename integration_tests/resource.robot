@@ -12,6 +12,8 @@ ${BROWSER}        Chrome
 ${DELAY}          1
 ${VALID USER}     user
 ${VALID PASSWORD}    helloworld
+${VALID ADMIN}    admin
+${VALID ADMIN PASSWORD}    adminpass
 ${LOGIN URL}      http://${SERVER}/
 ${WELCOME URL}    http://${SERVER}/login
 ${ERROR URL}      http://${SERVER}/login

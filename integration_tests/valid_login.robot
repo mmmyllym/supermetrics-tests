@@ -8,16 +8,16 @@ Resource          resource.robot
 *** Test Cases ***
 Valid Login User
     Open Browser To Login Page
-    Input Username    user
-    Input Password    hellorworld
+    Input Username    ${VALID USER}
+    Input Password    ${VALID PASSWORD}
     Submit Credentials
     Welcome Page Should Be Open
     [Teardown]    Reset and Close
 
 Valid Login Admin
     Open Browser To Login Page
-    Input Username    admin
-    Input Password    adminuser
+    Input Username    ${VALID ADMIN}
+    Input Password    ${VALID ADMIN PASSWORD}
     Submit Credentials
     Welcome Page Should Be Open
     [Teardown]    Reset and Close
