@@ -43,3 +43,30 @@ Submit Credentials
 
 Welcome Page Should Be Open
     Element Should Contain    id:__next    Supermetrics
+    Wait Until Element Is Visible    xpath:/html/body/div[1]/div/div/div[1]/div[2]/span/div    10
+
+Press reset
+    Click Button    xpath:/html/body/div[1]/div/nav/div/button[1]
+
+Login as normal user
+    Open Browser To Login Page
+    Input Username    ${VALID USER}
+    Input Password    ${VALID PASSWORD}
+    Submit Credentials
+    Welcome Page Should Be Open
+
+List of cats includes name
+    Element Should Contain    xpath:/html/body/div[1]/div/div/div[1]/div[2]/span/div    James
+
+List of cats includes picture
+    Page Should Contain Image    xpath:/html/body/div[1]/div/div/div[1]/div[2]/div/img
+
+List of cats includes awesomeness rating
+    Element Should Contain    xpath:/html/body/div[1]/div/div/div[1]/div[1]/span[3]    Awesomeness
+
+List of cats includes rank
+    Element Should Contain    xpath:/html/body/div[1]/div/div/div[2]/div[1]/span[1]    Rank
+
+Reset and close
+    Press reset
+    Close Browser
