@@ -48,6 +48,9 @@ Welcome Page Should Be Open
 Press reset
     Click Button    xpath:/html/body/div[1]/div/nav/div/button[1]
 
+Log Out
+    Click Button    xpath:/html/body/div[1]/div/nav/div/button[2]
+
 Login as normal user
     Open Browser To Login Page
     Input Username    ${VALID USER}
@@ -68,5 +71,6 @@ List of cats includes rank
     Element Should Contain    xpath:/html/body/div[1]/div/div/div[2]/div[1]/span[1]    Rank
 
 Reset and close
+    Log Out
     Press reset
     Close Browser
